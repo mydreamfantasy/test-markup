@@ -1,0 +1,23 @@
+.main-logo {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: $white-color;
+}
+
+.main-logo__icon {
+  margin: 0;
+  padding: 0;
+}
+
+.main-logo__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: $white-color;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "drink2go",
+  "short_name": "coffee-shop",
+  "icons": [
+    { "src": "img/favicon/512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

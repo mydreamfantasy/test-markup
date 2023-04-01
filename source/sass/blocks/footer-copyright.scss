@@ -1,0 +1,39 @@
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright__link {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $button-disabled;
+
+  &:hover .footer-copyright__text--link,
+  &:focus .footer-copyright__text--link {
+    color: $menu-color;
+  }
+
+  &:active .footer-copyright__text--link {
+    color: $button-active;
+  }
+
+  &:hover .footer-copyright__logo path,
+  &:focus .footer-copyright__logo path {
+    fill: $menu-color;
+  }
+
+  &:active .footer-copyright__logo path {
+    fill: $button-active;
+  }
+}
+
+.footer-copyright__logo {
+  position: relative;
+  top: 4px;
+  padding-top: 15px;
+
+  @media (min-width: $large-width) {
+    padding-top: 4px;
+  }
+}

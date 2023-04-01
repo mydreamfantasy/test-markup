@@ -1,0 +1,119 @@
+.goods__list {
+  margin-bottom: 40px;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+  }
+}
+
+.goods__item {
+  background-color: $white-color;
+  padding: 40px 20px 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 0;
+    padding: 48px 30px 33px;
+  }
+}
+
+.goods__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.goods__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 4px;
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+.goods__link {
+  display: block;
+  color: $black-color;
+}
+
+.goods__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $large-width) {
+    letter-spacing: -0.03em;
+  }
+}
+
+.goods__container {
+  display: flex;
+  gap: 50px;
+
+  @media (min-width: $medium-width) {
+    justify-content: space-between;
+  }
+}
+
+.goods__price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.goods__button {
+  display: block;
+  position: relative;
+  padding: 8px 20px 8px 44px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-color;
+  background-color: $menu-color;
+  border-radius: 4px;
+  background-image: url("../../img/catalog/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 19px 10px;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+  }
+}

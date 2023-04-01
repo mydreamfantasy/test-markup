@@ -1,0 +1,19 @@
+.main-header {
+  margin-top: 46px;
+  gap: 52px;
+  margin-bottom: 94px;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
+}
+
+.main-header__wrapper {
+  @media (max-width: $small-width-only) {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}

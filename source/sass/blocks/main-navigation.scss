@@ -1,0 +1,34 @@
+.main-navigation {
+  display: flex;
+  gap: 137px;
+}
+
+.main-navigation__list {
+  display: flex;
+  gap: 30px;
+}
+
+.main-navigation__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-navigation__link {
+  color: $white-color;
+}
+
+.main-contacts {
+  display: flex;
+  gap: 47px;
+}
+
+.main-contacts__tel {
+}
+
+.main-contacts__phone {
+  color: $white-color;
+}
+
+.main-contacts__social {
+}

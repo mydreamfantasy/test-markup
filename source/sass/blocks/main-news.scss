@@ -1,0 +1,251 @@
+.main-news {
+  position: relative;
+}
+
+.main-news__items {
+  padding: 20px 0 60px;
+
+  @media (min-width: $medium-width) {
+    padding: 60px 0 308px;
+    margin-bottom: 248px;
+  }
+
+  @media (min-width: $large-width) {
+    padding: 180px 0 242px 715px;
+    margin-bottom: 0;
+  }
+}
+
+.main-news__items--flat {
+  background-color: $flat-white;
+}
+
+.main-news__items--lavander {
+  display: none;
+  background-color: $lavander;
+}
+
+.main-news__items--espresso {
+  display: none;
+  background-color: $espresso;
+}
+
+.main-news__image {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 10px;
+
+  @media (min-width: $medium-width) {
+    position: absolute;
+    top: 352px;
+    left: 50%;
+    width: 476px;
+    height: 476px;
+    transform: translate(-50%, 0);
+  }
+
+  @media (min-width: $large-width) {
+    position: absolute;
+    top: 30px;
+    left: 405px;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.main-news__news {
+  margin: 0 20px;
+  padding: 0;
+  margin-bottom: 4px;
+  color: $menu-color;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media (min-width: $large-width) {
+    text-align: start;
+  }
+}
+
+.main-news__title {
+  padding: 0;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $large-width) {
+    text-align: start;
+  }
+}
+
+.main-news__text {
+  margin: 0 20px;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    padding: 0 72px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $large-width) {
+    text-align: start;
+    padding-left: 0;
+    padding-right: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+.main-news__wrap {
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
+  }
+}
+
+.main-news__container {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $large-width) {
+    justify-content: start;
+    margin-left: 20px;
+  }
+}
+
+.main-news__price {
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: $menu-color;
+
+  @media (min-width: $medium-width) {
+    padding-top: 5px;
+  }
+}
+
+.main-news__price--after {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $black-color;
+  text-decoration: none;
+
+  @media (min-width: $medium-width) {
+    padding-top: 5px;
+  }
+}
+
+.main-news__button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white-color;
+  background: #7859cf;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+  }
+}
+
+.new-toggles {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    max-width: 202px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+.new-toggle__next {
+  position: absolute;
+  height: 657px;
+  left: 94vw;
+  top: -657px;
+  width: 20px;
+
+  @media (min-width: $medium-width) {
+    width: 80px;
+    position: absolute;
+    height: 640px;
+    left: 90vw;
+    top: -888px;
+  }
+
+  @media (min-width: $large-width) {
+    top: 0;
+    left: 94.5vw;
+    height: 100%;
+    z-index: 4;
+  }
+}
+
+.new-toggle__previous {
+  position: absolute;
+  height: 657px;
+  left: 0;
+  top: -657px;
+  width: 20px;
+
+  @media (min-width: $medium-width) {
+    width: 80px;
+    position: absolute;
+    height: 640px;
+    left: 0;
+    top: -888px;
+  }
+
+  @media (min-width: $large-width) {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 4;
+  }
+}
